@@ -1,0 +1,12 @@
+
+<h2 class="form-title">Login</h2>
+<form >
+  <input type="text" class="form-control" id="userid"
+       [(ngModel)]="userid" name="name" placeholder="Enter Your UserId" />
+  <input type="password" class="form-control" id="passwd"
+       [(ngModel)]="passwd" name="passwd" placeholder="Enter Your Password" />
+  <p class="error" *ngIf="error">{{errorMsg}}</p>
+  <button class="btn" (click)="onClickSubmit()">Submit</button>
+  
+</form>
+
